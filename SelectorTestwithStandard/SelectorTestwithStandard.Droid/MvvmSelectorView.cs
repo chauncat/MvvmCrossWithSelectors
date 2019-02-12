@@ -52,7 +52,14 @@ namespace SelectorTestwithStandard.Droid
             var one = holder.ItemView.FindViewById<TextView>(Resource.Id.oneText);
             var two = holder.ItemView.FindViewById<TextView>(Resource.Id.twoText);
             var three = holder.ItemView.FindViewById<TextView>(Resource.Id.threeText);
+
+            var one2 = holder.ItemView.FindViewById<TextView>(Resource.Id.oneText1);
+            var two2 = holder.ItemView.FindViewById<TextView>(Resource.Id.twoText1);
+            var three2 = holder.ItemView.FindViewById<TextView>(Resource.Id.threeText1);
+
             var radio1 = holder.ItemView.FindViewById<AppCompatRadioButton>(Resource.Id.one);
+            var radio2 = holder.ItemView.FindViewById<AppCompatRadioButton>(Resource.Id.two);
+            var radio3 = holder.ItemView.FindViewById<AppCompatRadioButton>(Resource.Id.three);
 
             var dataContext = GetItem(position) as DroidListItem;
             if (dataContext != null)
@@ -61,6 +68,10 @@ namespace SelectorTestwithStandard.Droid
                 one.Text = dataContext.One.ToString();
                 two.Text = dataContext.Two.ToString();
                 three.Text = dataContext.Three.ToString();
+
+                one2.Text = radio1.Checked.ToString();
+                two2.Text = radio2.Checked.ToString();
+                three2.Text = radio3.Checked.ToString();
             }
 
             ApplyZebraStripes(holder.ItemView, position);

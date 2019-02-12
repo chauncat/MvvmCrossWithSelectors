@@ -34,6 +34,7 @@
 		android:id="@+id/oneText"
 		android:layout_toRightOf="@+id/droid_radio"
 		tools:text="Testing"
+		android:padding="8dp"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"/>
 	<TextView
@@ -41,6 +42,7 @@
 		android:layout_toRightOf="@+id/droid_radio"
 		android:layout_below="@+id/oneText"
 		tools:text="Testing@"
+		android:padding="8dp"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"/>
 	<TextView
@@ -48,6 +50,31 @@
 		android:layout_toRightOf="@+id/droid_radio"
 		android:layout_below="@+id/twoText"
 		tools:text="Testing!!"
+		android:padding="8dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<TextView
+		android:id="@+id/oneText1"
+		android:layout_toRightOf="@+id/oneText"
+		tools:text="Testing"
+		android:padding="8dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<TextView
+		android:id="@+id/twoText1"
+		android:layout_toRightOf="@+id/twoText"
+		android:layout_below="@+id/oneText1"
+		tools:text="Testing@"
+		android:padding="8dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<TextView
+		android:id="@+id/threeText1"
+		android:layout_toRightOf="@+id/twoText"
+		android:layout_below="@+id/twoText1"
+		tools:text="Testing!!"
+		android:padding="8dp"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"/>
 </RelativeLayout>
